@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Lab Experiment Gone Wrong | Retro Gaming Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Starfield Background -->
+    <div class="starfield">
+        <div class="star-layer" data-speed="1"></div>
+        <div class="star-layer" data-speed="2"></div>
+        <div class="star-layer" data-speed="3"></div>
+    </div>
+
+    <!-- Aurora Effect -->
+    <div class="aurora-effect"></div>
+
+    <!-- Floating Lab Equipment -->
+    <div class="floating-equipment">
+        <div class="floating-item beaker-float" style="top: 20%; left: 10%;">🧪</div>
+        <div class="floating-item test-tube-float" style="top: 60%; left: 85%;">⚗️</div>
+        <div class="floating-item molecule-float" style="top: 40%; left: 5%;">🧬</div>
+        <div class="floating-item atom-float" style="top: 80%; left: 90%;">⚛️</div>
+    </div>
+
+    <!-- Header with Glitch Effects -->
+    <header class="lab-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="retro-logo glitch-text">
+                    <span data-text="RETRO LAB">APEX LABS</span>
+                </div>
+                <div class="status-bar">
+                    <div class="health-bar">
+                        <div class="health-fill"></div>
+                        <span>SYSTEM: FAILED</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Robot Characters -->
+    <div class="robot-area">
+        <div class="robot" id="robot-1" data-behavior="curious">
+            <div class="robot-body">
+                <div class="robot-head">
+                    <div class="robot-eye left-eye"></div>
+                    <div class="robot-eye right-eye"></div>
+                    <div class="robot-mouth"></div>
+                </div>
+                <div class="robot-torso">
+                    <div class="chest-panel"></div>
+                </div>
+                <div class="robot-arms">
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+                </div>
+            </div>
+            <div class="speech-bubble hidden">
+                <span class="speech-text"></span>
+            </div>
+        </div>
+
+        <div class="robot" id="robot-2" data-behavior="helper">
+            <div class="robot-body">
+                <div class="robot-head">
+                    <div class="robot-eye left-eye"></div>
+                    <div class="robot-eye right-eye"></div>
+                    <div class="robot-mouth"></div>
+                </div>
+                <div class="robot-torso">
+                    <div class="chest-panel"></div>
+                </div>
+                <div class="robot-arms">
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+                </div>
+            </div>
+            <div class="speech-bubble hidden">
+                <span class="speech-text"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Game Area -->
+    <main class="game-environment">
+        <div class="container">
+            <!-- Holographic Panels -->
+            <div class="holo-panel left-panel">
+                <div class="panel-content">
+                    <h3 class="typing-text">MICROSOFT TECH CLUB</h3>
+                    <div class="terminal-output">
+                        <div class="terminal-line">$ WE CANT FIND ERRORS...</div>
+                        <div class="terminal-line delay-1">$ BOOP!!!</div>
+                        <div class="terminal-line delay-2">$ KEEP REFRESHINGG...</div>
+                        <div class="terminal-line delay-3 error-text">$ REFRESH FAILED</div>
+                    </div>
+                    <div class="progress-bars">
+                        <div class="progress-bar">
+                            <span>DNA Integrity</span>
+                            <div class="progress-track">
+                                <div class="progress-fill dna-progress"></div>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <span>System Stability</span>
+                            <div class="progress-track">
+                                <div class="progress-fill system-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="holo-panel right-panel">
+                <div class="panel-content">
+                    <h3 class="typing-text">MOLECULAR ANALYZER</h3>
+                    <div class="molecule-display">
+                        <div class="molecule-structure">
+                            <div class="atom" data-element="C"></div>
+                            <div class="atom" data-element="H"></div>
+                            <div class="atom" data-element="O"></div>
+                            <div class="atom" data-element="N"></div>
+                            <div class="bond bond-1"></div>
+                            <div class="bond bond-2"></div>
+                            <div class="bond bond-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Central Error Display -->
+            <div class="error-display">
+                <div class="glitch-container">
+                    <div class="error-code">
+                        <span class="digit" data-target="4">4</span>
+                        <span class="digit" data-target="0">0</span>
+                        <span class="digit" data-target="4">4</span>
+                        <span class="digit" data-target="1">!</span>
+                    </div>
+                </div>
+                <h1 class="error-title glitch-text" data-text="CRITICAL FAILURE">CRITICAL FAILURE</h1>
+        
+            <h2 class="error-subtitle typing-text">OH CROP NOT FOUND!!!</h2>
+                <div class="error-animation">
+                    <div class="dna-strand-anim">
+                        <div class="dna-base" style="--delay: 0s;"></div>
+                        <div class="dna-base" style="--delay: 0.2s;"></div>
+                        <div class="dna-base" style="--delay: 0.4s;"></div>
+                        <div class="dna-base" style="--delay: 0.6s;"></div>
+                        <div class="dna-base" style="--delay: 0.8s;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive DNA Helix -->
+            <div class="dna-helix-container">
+                <div class="dna-helix rotating">
+                    <div class="helix-strand strand-1">
+                        <div class="base-pair interactive" data-pair="A-T"></div>
+                        <div class="base-pair interactive broken" data-pair="G-C"></div>
+                        <div class="base-pair interactive" data-pair="T-A"></div>
+                        <div class="base-pair interactive broken" data-pair="C-G"></div>
+                        <div class="base-pair interactive" data-pair="A-T"></div>
+                        <div class="base-pair interactive broken" data-pair="G-C"></div>
+                    </div>
+                    <div class="helix-strand strand-2">
+                        <div class="base-pair interactive" data-pair="T-A"></div>
+                        <div class="base-pair interactive broken" data-pair="C-G"></div>
+                        <div class="base-pair interactive" data-pair="A-T"></div>
+                        <div class="base-pair interactive broken" data-pair="G-C"></div>
+                        <div class="base-pair interactive" data-pair="T-A"></div>
+                        <div class="base-pair interactive broken" data-pair="C-G"></div>
+                    </div>
+                </div>
+                <div class="repair-status">
+                    <span>DNA REPAIR: <span id="repair-count">0</span>/6</span>
+                    <div class="repair-bar">
+                        <div class="repair-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mini-Game Area -->
+            <div class="mini-game-zone">
+                <h3>EMERGENCY PROTOCOL: SEQUENCE MATCHING</h3>
+                <div class="sequence-game">
+                    <div class="sequence-display">
+                        <div class="sequence-button" data-color="red"></div>
+                        <div class="sequence-button" data-color="blue"></div>
+                        <div class="sequence-button" data-color="green"></div>
+                        <div class="sequence-button" data-color="yellow"></div>
+                    </div>
+                    <div class="game-stats">
+                        <span>Level: <span id="game-level">1</span></span>
+                        <span>Score: <span id="game-score">0</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Status Indicators -->
+    <div class="status-indicators">
+        <div class="indicator power-indicator">
+            <div class="indicator-light"></div>
+            <span>POWER</span>
+        </div>
+        <div class="indicator connection-indicator">
+            <div class="indicator-light"></div>
+            <span>NETWORK</span>
+        </div>
+        <div class="indicator error-indicator active">
+            <div class="indicator-light"></div>
+            <span>ERROR</span>
+        </div>
+    </div>
+
+    <!-- Click Counter with Effects -->
+    <div class="click-counter">
+        <span class="counter-icon">⚡</span>
+        <span>Interactions: <span id="click-count">0</span></span>
+        <div class="xp-bar">
+            <div class="xp-fill"></div>
+        </div>
+    </div>
+
+    <!-- Achievement Popup -->
+    <div class="achievement-popup hidden" id="achievement">
+        <div class="achievement-content">
+            <div class="achievement-icon">🏆</div>
+            <div class="achievement-text">
+                <div class="achievement-title"></div>
+                <div class="achievement-desc"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Controls -->
+    <footer class="game-footer">
+        <div class="container">
+            <div class="control-panel">
+                <button class="btn btn--primary game-btn" id="home-btn">
+                    <span class="btn-text">RETURN TO BASE</span>
+                    <div class="btn-particles"></div>
+                </button>
+                <button class="btn btn--secondary game-btn" id="report-btn">
+                    <span class="btn-text">INCIDENT REPORT</span>
+                    <div class="btn-particles"></div>
+                </button>
+                <button class="btn btn--outline game-btn" id="retry-btn">
+                    <span class="btn-text">RETRY SEQUENCE</span>
+                    <div class="btn-particles"></div>
+                </button>
+            </div>
+            <div class="social-controls">
+                <button class="social-btn" id="share-btn">
+                    <span>📡 BROADCAST RESULTS</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Incident Report -->
+    <div class="modal hidden" id="incident-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="glitch-text" data-text="INCIDENT REPORT">INCIDENT REPORT</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="incident-form">
+                    <div class="form-group">
+                        <label class="form-label">Incident Classification:</label>
+                        <select class="form-control">
+                            <option>404 - Resource Not Found</option>
+                            <option>DNA Sequence Corrupted</option>
+                            <option>Robot Malfunction</option>
+                            <option>System Core Failure</option>
+                            <option>Particle Accelerator Overload</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Detailed Description:</label>
+                        <textarea class="form-control" rows="4" placeholder="Describe the anomaly...">Critical system failure detected in biolab sector 7. Page resource could not be located in quantum database. Recommend immediate DNA repair protocol activation...</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Severity Level:</label>
+                        <div class="severity-buttons">
+                            <button type="button" class="severity-btn" data-level="low">LOW</button>
+                            <button type="button" class="severity-btn active" data-level="critical">CRITICAL</button>
+                            <button type="button" class="severity-btn" data-level="catastrophic">CATASTROPHIC</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary">SUBMIT REPORT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secret Lab Mode Indicator -->
+    <div class="secret-mode-indicator hidden" id="secret-mode">
+        <div class="secret-content">
+            <span class="rainbow-text">DEVELOPER MODE ACTIVATED!</span>
+            <div class="mode-effects">
+                <span>🌈 RAINBOW MODE</span>
+                <span>⚡ SUPER SPEED</span>
+                <span>🔄 SCREEN INVERT</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konami Code Hint -->
+    <div class="konami-hint">
+        <span>Try: ↑↑↓↓←→←→BA</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
